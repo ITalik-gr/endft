@@ -27,7 +27,7 @@ ul {
         border-radius: 60px;
         @include dfc;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 30px;
         color: #FFFFFF;
         transition: .3s all;
@@ -36,6 +36,68 @@ ul {
             color: #ffffff;
             background: #076cef;
         }
+    }
+    &-2 {
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 60px;
+        @include dfc;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        transition: .4s all;
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+
+@keyframes header-img {
+    0% {
+        transform: translateY(-13px);
+    }
+    50% {
+        transform: translateY(12px);
+    }
+    100% {
+        transform: translateY(-13px);
+    }
+}
+
+@keyframes header-img_2 {
+    0% {
+        transform: translateX(-10px) matrix(.98,0,-.18,1,0,0);;
+    }
+    50% {
+        transform: translateX(10px) matrix(.98,0,-.18,1,0,0);;
+    }
+    100% {
+        transform: translateX(-10px) matrix(.98,0,-.18,1,0,0);;
+    }
+}
+
+@keyframes header-img_3 {
+    0% {
+        transform: translateX(-4px) translateY(-10px) matrix(.98,0,-.18,1,0,0);;
+    }
+    50% {
+        transform: translateX(3px) translateY(10px) matrix(.98,0,-.18,1,0,0);;
+    }
+    100% {
+        transform: translateX(-4px) translateY(-10px) matrix(.98,0,-.18,1,0,0);;
+    }
+}
+
+@keyframes header-img_5 {
+    0% {
+        transform: matrix(.98,0,-.18,1,0,0) scale(1);;
+    }
+    50% {
+        transform: matrix(.98,0,-.18,1,0,0) scale(1.05);;
+    }
+    100% {
+        transform: matrix(.98,0,-.18,1,0,0) scale(1);;
     }
 }
 
