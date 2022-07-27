@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/clash-display?styles=106288,106286,106287,106289,106284');
+@import 'libs/bootstrap-reboot.min';
+@import 'base/mixins';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #141943;
+}
+.container {
+    width: 1385px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    &-1 {
+        background: #2F80ED;
+        border-radius: 60px;
+        @include dfc;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        transition: .3s all;
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background: #076cef;
+        }
+    }
+}
+
+
+@import 'blocks/header';
