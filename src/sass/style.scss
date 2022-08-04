@@ -100,6 +100,27 @@ ul {
         transform: matrix(.98,0,-.18,1,0,0) scale(1);;
     }
 }
+.mr0 {
+    margin-right: 0!important;
+}
 
+.content {
+    &-title {
+        margin-bottom: 60px;
+        span {
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 68px;
+            background: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-family: 'Clash Display';
+        }
+    }
+}
 
 @import 'blocks/header';
+@import 'blocks/parthners';
+@import 'blocks/nfts';

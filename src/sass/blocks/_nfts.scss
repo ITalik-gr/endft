@@ -1,0 +1,150 @@
+.nfts {
+  padding: 387px 0 0 0;
+  &-wrap {
+
+  }
+  &-card {
+    position: relative;
+    width: 442px;
+    height: 607px;
+    padding: 20px;
+    background: #000;
+    border-radius: 20px;
+    z-index: 3;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      border-radius: 20px;
+      background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      background: linear-gradient(90deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+      width: calc(100% + 5px);
+      height: calc(100% + 5px);
+      border-radius: 20px;
+      z-index: 1;
+    }
+    &-top {
+      margin-bottom: 20px;
+    }
+    &-bottom {
+
+    }
+    &__image { //  картинка
+      position: absolute;
+      top: 0;
+      left: 0;
+      &-wrap { // батя картинки
+        height: 328px;
+        position: relative;
+        width: 400px;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+    }
+
+    &-names { // первая строчка
+      @include dfsb;
+      margin-bottom: 20px;
+      &__block {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__logo {
+      margin-right: 15px;
+      img {
+
+      }
+    }
+    &__title { // имя нфт и автор
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      color: #6A58F1;
+      margin-bottom: 5px;
+      span { // колекция, автор
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        display: block;
+      }
+    }
+    &__crypto { // блокчейн
+      img {
+
+      }
+    }
+    &__prices { // ціни та флор
+      @include dfsb;
+      margin-bottom: 20px;
+    }
+    &__latest { // latest Bid
+
+    }
+    &__from { //  from
+
+    }
+    &__price { // цена сейчас
+      span {
+        text-align: right;
+      }
+    }
+    &__latest,
+    &__from,
+    &__price {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+    }
+    &__latest,
+    &__from,
+    &__price {
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        display: block;
+      }
+    }
+    &__procent { // изменения цены
+      color: #24FF00;
+    }
+    &__btn {
+      display: none;
+      width: 400.96px;
+      height: 60px;
+      background: #2F80ED;
+      border-radius: 60px;
+      @include dfc;
+      font-weight: 600;
+      font-size: 20px;
+      color: #FFFFFF;
+      &:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+    }
+
+    &__active { // карточка посредине с кнопкой
+        .nfts-card {
+          &__btn {
+            display: flex;
+          }
+      }
+    }
+  }
+}

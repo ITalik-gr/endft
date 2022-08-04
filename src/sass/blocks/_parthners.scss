@@ -1,0 +1,15 @@
+.partners {
+  padding: 170px 0 0 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-card {
+    margin-right: 119px;
+    margin-bottom: 65px;
+    img {
+
+    }
+  }
+}
